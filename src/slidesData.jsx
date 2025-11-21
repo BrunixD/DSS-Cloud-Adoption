@@ -74,7 +74,7 @@ export const slidesData = [
     <><h3>Key Findings from the Literature (SLR)</h3><p>The review revealed a clear and actionable research gap:</p><ul><li>Numerous theoretical frameworks exist, but they are often too complex for direct application by SMEs.</li><li>Existing vendor tools are biased and lack a holistic, agnostic perspective.</li><li>There is a lack of a <strong>simplified, practical, and context-aware tool</strong> for SME decision-making.</li></ul><p style={{marginTop: '20px', fontWeight: 'bold', fontSize: '1.5rem'}}>This gap is precisely what our work aims to fill.</p></>,
     <><h3>Part 2: Design Science Research (DSR)</h3><p>To address the identified gap, we used DSR to <strong>build and evaluate an IT artifact</strong>.</p>
     <figure>
-      <img src="src/assets/dsr-model.png" alt="DSR Model" style={{ maxHeight: '45vh' }}/>
+      <img src="./src/assets/dsr-model.png" alt="DSR Model" style={{ maxHeight: '45vh' }}/>
       <figcaption>Figure 3.1: DSR Methodology Process Model [19]</figcaption>
     </figure>
     </>
@@ -90,19 +90,19 @@ export const slidesData = [
       <>
         <p><strong>Technology-Organization-Environment (TOE)</strong> framework identifies three key contexts influencing technology adoption.</p>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginTop: '20px' }}>
-        <img src="src/assets/toe-model.png" alt="TOE Framework" title="TOE Framework" style={{ height: '35vh', border: '1px solid #ccc' }}/>
+        <img src="./src/assets/toe-model.png" alt="TOE Framework" title="TOE Framework" style={{ height: '35vh', border: '1px solid #ccc' }}/>
         </div>
         </>,
       <>
         <p><strong>Technology Acceptance Model (TAM)</strong> focuses on perceived usefulness and ease of use as primary factors in technology adoption.</p>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginTop: '20px' }}>
-        <img src="src/assets/tam-model.png" alt="TAM Model" title="TAM Model" style={{ height: '35vh', border: '1px solid #ccc' }}/>
+        <img src="./src/assets/tam-model.png" alt="TAM Model" title="TAM Model" style={{ height: '35vh', border: '1px solid #ccc' }}/>
         </div>
       </>,
       <>
         <p><strong>Diffusion of Innovations (DOI)</strong> theory explains how, why, and at what rate new ideas and technology spread.</p>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginTop: '20px' }}>
-        <img src="src/assets/doi-model.png" alt="DOI Curve" title="DOI Curve" style={{ height: '50vh', border: '1px solid #ccc' }}/>
+        <img src="./src/assets/doi-model.png" alt="DOI Curve" title="DOI Curve" style={{ height: '50vh', border: '1px solid #ccc' }}/>
         </div>
       </>,
     <>
@@ -141,7 +141,7 @@ export const slidesData = [
       <h3>Application Architecture</h3>
       <p>The DSS was implemented using a modern, Serverless, Edge-First architecture for performance and scalability.</p>
       <figure>
-        <img src="src/assets/app-architecture.png" alt="Application Architecture" style={{ maxHeight: '50vh' }}/>
+        <img src="./src/assets/app-architecture.png" alt="Application Architecture" style={{ maxHeight: '50vh' }}/>
         <figcaption>Figure 4.8: Application Architecture</figcaption>
       </figure>
     </>,
@@ -149,7 +149,7 @@ export const slidesData = [
       <h3>Application Workflow</h3>
       <p>The final tool guides users through a simple, step-by-step process.</p>
       <figure>
-        <img src="src/assets/app-workflow.png" alt="Application Workflow" style={{ maxHeight: '50vh' }}/>
+        <img src="./src/assets/app-workflow.png" alt="Application Workflow" style={{ maxHeight: '50vh' }}/>
         <figcaption>Figures 4.9: Application Workflow Diagram</figcaption>
       </figure>
       <p>Accessible at: <a href="https://brunomsc.pt" target="_blank" rel="noopener noreferrer">brunomsc.pt</a></p>
