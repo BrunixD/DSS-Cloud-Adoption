@@ -51,7 +51,7 @@ const Presentation = ({ slides }) => {
 
   return (
     <div className="deck-container">
-      <img src="src/assets/iscte-logo.png" alt="Iscte Logo" className="persistent-logo" />
+      <img src="./assets/iscte-logo.png" alt="Iscte Logo" className="persistent-logo" />
 
       <div className="deck" style={deckStyle}>
         {slides.map((hSection, hIndex) => (
