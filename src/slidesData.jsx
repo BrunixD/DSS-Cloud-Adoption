@@ -1,6 +1,6 @@
 import React from 'react';
 
-// --- Reusable Bar Chart Component and Chart Data ---
+// --- Reusable Bar Chart Component and Chart Data (No Changes) ---
 const BarChart = ({ data, title }) => (
   <div style={{ width: '100%', maxWidth: '600px', padding: '20px', border: '1px solid #eee', borderRadius: '8px', backgroundColor: '#f9f9f9', marginTop: '20px' }}>
     <h4 style={{ textAlign: 'center', marginBottom: '20px', fontSize: '1.2rem' }}>{title}</h4>
@@ -28,6 +28,8 @@ const BarChart = ({ data, title }) => (
 );
 const serviceModelData = [{ label: 'SaaS', percentage: 86 }, { label: 'PaaS / IaaS', percentage: 14 }];
 const supportModelData = [{ label: 'Third-Party', percentage: 86 }, { label: 'Vendor/Self', percentage: 14 }];
+// --- End of Unchanged Section ---
+
 
 // --- The Main Presentation Content ---
 export const slidesData = [
@@ -60,11 +62,19 @@ export const slidesData = [
     </>
   ],
 
-  // Section 2: The Problem
+  // Section 2: The Problem (UPDATED)
   [
     <><h2>1. The Problem</h2><p>Why is this research necessary?</p></>,
     <><h3>The SME Challenge</h3><ul><li>Cloud computing offers huge benefits, but for SMEs, adoption is complex and often "ad-hoc".</li><li>This leads to failures, unforeseen costs, and inefficiencies.</li></ul></>,
     <><h3>The Proposed Solution</h3><p>To design a <strong>Decision Support System (DSS)</strong> that provides SMEs with a structured, simplified, and evidence-based path to cloud adoption.</p></>,
+    <>
+      <h3>Research Questions</h3>
+      <ol style={{textAlign: 'left', maxWidth: '800px'}}>
+        <li><strong>RQ1:</strong> What are the essential and simplified components of a DSS that effectively guides SMEs through a successful cloud migration?</li>
+        <li><strong>RQ2:</strong> Are there any alternatives to high market choices (AWS, Azure, etc.) with specific strengths or benefits?</li>
+        <li><strong>RQ3:</strong> How can an SME maintain a stable post-adoption of Cloud Computing?</li>
+      </ol>
+    </>
   ],
 
   // Section 3: Methodology
@@ -72,53 +82,67 @@ export const slidesData = [
     <><h2>2. Methodology: A Dual Approach</h2><p>To build a relevant solution, we combined two research methodologies.</p></>,
     <><h3>Part 1: Systematic Literature Review (SLR)</h3><p>Using the PRISMA framework, we reviewed existing research, resulting in <strong>29 core papers</strong>.</p><table className="results-table slr-table"><thead><tr><th>Database</th><th>No Filter</th><th>F1</th><th>F2</th><th>F3</th><th>F4</th></tr></thead><tbody><tr><td>IEEE Xplore</td><td>14</td><td>14</td><td>6</td><td>6</td><td>6</td></tr><tr><td>Scopus</td><td>27</td><td>26</td><td>10</td><td>4</td><td>4</td></tr><tr><td>ACM Library</td><td>29</td><td>15</td><td>7</td><td>2</td><td>1</td></tr><tr><td>Google Scholar</td><td>4 320</td><td>372</td><td>260</td><td>22</td><td>15</td></tr><tr><td>EBC</td><td>1 099</td><td>155</td><td>103</td><td>9</td><td>5</td></tr></tbody></table></>,
     <><h3>Key Findings from the Literature (SLR)</h3><p>The review revealed a clear and actionable research gap:</p><ul><li>Numerous theoretical frameworks exist, but they are often too complex for direct application by SMEs.</li><li>Existing vendor tools are biased and lack a holistic, agnostic perspective.</li><li>There is a lack of a <strong>simplified, practical, and context-aware tool</strong> for SME decision-making.</li></ul><p style={{marginTop: '20px', fontWeight: 'bold', fontSize: '1.5rem'}}>This gap is precisely what our work aims to fill.</p></>,
-    <><h3>Part 2: Design Science Research (DSR)</h3><p>To address the identified gap, we used DSR to <strong>build and evaluate an IT artifact</strong>.</p>
-    <figure>
-      <img src="./assets/dsr-model.png" alt="DSR Model" style={{ maxHeight: '45vh' }}/>
-      <figcaption>Figure 3.1: DSR Methodology Process Model [19]</figcaption>
-    </figure>
-    </>
+    <><h3>Part 2: Design Science Research (DSR)</h3><p>To address the identified gap, we used DSR to <strong>build and evaluate an IT artifact</strong>.</p><figure><img src="./assets/dsr-model.png" alt="DSR Model" style={{ maxHeight: '45vh' }}/><figcaption>Figure 3.1: DSR Methodology Process Model [19]</figcaption></figure></>
   ],
 
-  // Section 4: The Conceptual Artifact
+  // Section 4: The Conceptual Artifact (UPDATED)
   [
     <><h2>3. The Conceptual Artifact</h2><p>Designing the "brain" of the Decision Support System.</p></>,
     <>
       <h3>Conceptual Foundations: TOE, TAM, DOI</h3>
       <p>The DSS logic is built upon well-established theories of technology adoption identified in the SLR.</p>
-      </>,
-      <>
-        <p><strong>Technology-Organization-Environment (TOE)</strong> framework identifies three key contexts influencing technology adoption.</p>
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginTop: '20px' }}>
-        <img src="./assets/toe-model.png" alt="TOE Framework" title="TOE Framework" style={{ height: '35vh', border: '1px solid #ccc' }}/>
-        </div>
-        </>,
-      <>
-        <p><strong>Technology Acceptance Model (TAM)</strong> focuses on perceived usefulness and ease of use as primary factors in technology adoption.</p>
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginTop: '20px' }}>
-        <img src="./assets/tam-model.png" alt="TAM Model" title="TAM Model" style={{ height: '35vh', border: '1px solid #ccc' }}/>
-        </div>
-      </>,
-      <>
-        <p><strong>Diffusion of Innovations (DOI)</strong> theory explains how, why, and at what rate new ideas and technology spread.</p>
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginTop: '20px' }}>
-        <img src="./assets/doi-model.png" alt="DOI Curve" title="DOI Curve" style={{ height: '50vh', border: '1px solid #ccc' }}/>
-        </div>
-      </>,
+    </>,
+    <> 
+      <h3>TOE</h3>
+      <p><strong>Technology-Organization-Environment (TOE)</strong></p>
+      <figure>
+        <img src="./assets/toe-model.png" alt="TOE Framework Diagram" style={{ maxHeight: '50vh' }}/>
+        <figcaption>Influenced questions on internal capabilities and external pressures.</figcaption>
+      </figure>
+    </>,
+    <>
+      <h3>TAM</h3>
+      <p><strong>Technology Acceptance Model (TAM)</strong></p>
+      <figure>
+        <img src="./assets/tam-model.png" alt="TAM Model Diagram" style={{ maxHeight: '45vh' }}/>
+        <figcaption>Guided questions on the perceived usefulness of cloud tools.</figcaption>
+      </figure>
+    </>,
+     <>
+      <h3>DOI</h3>
+      <p><strong>Diffusion of Innovations (DOI)</strong></p>
+      <figure>
+        <img src="./assets/doi-model.png" alt="DOI Curve Diagram" style={{ maxHeight: '50vh' }}/>
+        <figcaption>Helped frame the SME's readiness on the adoption curve.</figcaption>
+      </figure>
+    </>,
+    // --- UPDATED SLIDE ---
     <>
       <h3>The Weighted Scoring Model</h3>
-      <p>We translated these theories into a practical questionnaire, mapping business questions to technical recommendations.</p>
-      <table className="results-table scoring-table">
-        <thead><tr><th>Example Question</th><th>Answer</th><th>Scoring Logic</th></tr></thead>
-        <tbody>
-            <tr><td rowSpan="2">Would automating tasks like customer service or accounting help you?</td><td>Yes</td><td>+2 PaaS, +1 SaaS</td></tr>
-            <tr><td>No</td><td>(No points)</td></tr>
-            <tr><td rowSpan="2">Are you subject to data regulations (e.g., GDPR)?</td><td>Yes</td><td>+2 Private, +2 Hybrid</td></tr>
-            <tr><td>No</td><td>(No points)</td></tr>
-            <tr><td rowSpan="2">Do you need 24/7 support for mission-critical services?</td><td>Yes</td><td>+2 Vendor-managed</td></tr>
-            <tr><td>No</td><td>(No points)</td></tr>
-        </tbody>
-      </table>
+      <p>We translated these theories into a questionnaire that provides recommendations across <strong>three core categories</strong>.</p>
+      <div style={{display: 'flex', gap: '20px', justifyContent: 'center', width: '90%'}}>
+        <div className="scoring-category">
+            <h4>1. Service Model</h4>
+            <p>(SaaS, PaaS, IaaS)</p>
+            <hr/>
+            <p className="question-example">"Would automating tasks like customer service or accounting help you?"</p>
+            <p className="scoring-example">→ +2 SaaS, +1 PaaS</p>
+        </div>
+        <div className="scoring-category">
+            <h4>2. Deployment Model</h4>
+            <p>(Public, Private, Hybrid)</p>
+            <hr/>
+            <p className="question-example">"Are you subject to data regulations like GDPR?"</p>
+            <p className="scoring-example">→ +2 Private, +2 Hybrid</p>
+        </div>
+        <div className="scoring-category">
+            <h4>3. Support Model</h4>
+            <p>(Self, Vendor, Third-Party)</p>
+            <hr/>
+            <p className="question-example">"Do you need 24/7 support for critical services?"</p>
+            <p className="scoring-example">→ +2 Vendor-managed</p>
+        </div>
+      </div>
     </>,
      <>
       <h3>Validation Personas</h3>
@@ -150,7 +174,7 @@ export const slidesData = [
       <p>The final tool guides users through a simple, step-by-step process.</p>
       <figure>
         <img src="./assets/app-workflow.png" alt="Application Workflow" style={{ maxHeight: '50vh' }}/>
-        <figcaption>Figures 4.9: Application Workflow Diagram</figcaption>
+        <figcaption>Application Workflow Diagram</figcaption>
       </figure>
       <p>Accessible at: <a href="https://brunomsc.pt" target="_blank" rel="noopener noreferrer">brunomsc.pt</a></p>
     </>
@@ -249,9 +273,9 @@ export const slidesData = [
     </>,
     <>
       <h3>Final Remarks</h3>
-      <p>This dissertation successfully designed, built, and validated a pragmatic artifact to solve a relevant industry problem.</p>
+      <p>"This dissertation proposes a structured approach and a pragmatic artifact that serves as a solid foundation for solving a relevant industry problem.</p>
       <p style={{fontSize: '1.5rem', marginTop: '30px'}}>The work's contribution is validated by the acceptance of a derived paper for publication at the</p>
-      <p style={{fontSize: '1.8rem', fontWeight: 'bold', color: '#134674', marginTop: '10px'}}>ICEEECS 2025 Conference.</p>
+      <p style={{fontSize: '1.8rem', fontWeight: 'bold', color: '#134674', marginTop: '10px'}}>ICICT 2026 Conference.</p>
     </>
   ],
 

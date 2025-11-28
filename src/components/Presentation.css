@@ -232,3 +232,46 @@ body {
 .findings-table {
   font-size: 1rem;
 }
+
+.scoring-category {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.scoring-category h4 {
+  font-size: 1.5rem;
+  color: #134674;
+  margin: 0;
+}
+
+.scoring-category p {
+  font-size: 1.1rem;
+  margin: 5px 0 0 0;
+}
+
+.scoring-category hr {
+  width: 50%;
+  border: none;
+  border-top: 2px solid #134674;
+  margin: 15px auto;
+}
+
+.scoring-category .question-example {
+  font-style: italic;
+  color: #555;
+  flex-grow: 1; /* Pushes the scoring example down */
+  font-size: 1.2rem;
+}
+
+.scoring-category .scoring-example {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.2rem;
+  margin-top: auto; /* Aligns to the bottom */
+}
