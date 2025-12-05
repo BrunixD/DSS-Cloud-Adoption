@@ -65,7 +65,7 @@ const Presentation = ({ slides }) => {
         ))}
       </div>
       
-      {/* --- NEW: Add the persistent footer --- */}
+      {/* --- persistent footer --- */}
       <footer className="persistent-footer">
         DSS in the Adoption of Cloud Based Solutions by SMEs | Bruno Carvalho @ Iscte
       </footer>

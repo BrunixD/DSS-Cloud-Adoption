@@ -1,6 +1,6 @@
 import React from 'react';
 
-// --- Reusable Bar Chart Component and Chart Data (No Changes) ---
+// --- Reusable Bar Chart Component and Chart Data ---
 const BarChart = ({ data, title }) => (
   <div style={{ width: '100%', maxWidth: '600px', padding: '20px', border: '1px solid #eee', borderRadius: '8px', backgroundColor: '#f9f9f9', marginTop: '20px' }}>
     <h4 style={{ textAlign: 'center', marginBottom: '20px', fontSize: '1.2rem' }}>{title}</h4>
@@ -60,7 +60,7 @@ export const slidesData = [
     </>
   ],
 
-  // Section 2: The Problem (UPDATED)
+  // Section 2: The Problem
   [
     <><h2>1. The Problem</h2><p>Why is this research necessary?</p></>,
     <><h3>The SME Challenge</h3><ul><li>Cloud computing offers huge benefits, but for SMEs, adoption is complex and often "ad-hoc".</li><li>This leads to failures, unforeseen costs, and inefficiencies.</li></ul></>,
@@ -83,7 +83,7 @@ export const slidesData = [
     <><h3>Part 2: Design Science Research (DSR)</h3><p>To address the identified gap, we used DSR to <strong>build and evaluate an IT artifact</strong>.</p><figure><img src="./assets/dsr-model.png" alt="DSR Model" style={{ maxHeight: '45vh' }}/><figcaption>Figure 3.1: DSR Methodology Process Model [19]</figcaption></figure></>
   ],
 
-  // Section 4: The Conceptual Artifact (UPDATED)
+  // Section 4: The Conceptual Artifact
   [
     <><h2>3. The Conceptual Artifact</h2><p>Designing the "brain" of the Decision Support System.</p></>,
     <>
@@ -114,7 +114,6 @@ export const slidesData = [
         <figcaption>Helped frame the SME's readiness on the adoption curve.</figcaption>
       </figure>
     </>,
-    // --- UPDATED SLIDE ---
     <>
       <h3>The Weighted Scoring Model</h3>
       <p>We translated these theories into a questionnaire that provides recommendations across <strong>three core categories</strong>.</p>
