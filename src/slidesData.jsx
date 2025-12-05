@@ -54,9 +54,7 @@ export const slidesData = [
           textAlign: 'left'
         }}>
           <h4 style={{textAlign: 'center', fontSize: '1.3rem', marginBottom: '20px'}}>Examination Committee</h4>
-          <p style={{fontSize: '1.2rem', margin: '10px 0'}}><strong>Chairperson:</strong> Doctor Caroline Conti</p>
-          <p style={{fontSize: '1.2rem', margin: '10px 0'}}><strong>Supervisor:</strong> Doctor Carlos Eduardo Dias Coutinho</p>
-          <p style={{fontSize: '1.2rem', margin: '10px 0'}}><strong>Member:</strong> Doctor Ruben Duarte Dias da Costa</p>
+          <p style={{fontSize: '1.2rem', margin: '10px 0'}}><strong>Supervisor:</strong> Doctor Carlos Eduardo Dias Coutinho & Pedro José do Vale Duarte</p>
         </div>
       </div>
     </>
@@ -212,9 +210,6 @@ export const slidesData = [
           </tr>
         </tbody>
       </table>
-    </>,
-    <>
-      <h3>Visualizing the Key Findings</h3>
       <div style={{display: 'flex', width: '100%', justifyContent: 'space-around'}}>
         <BarChart data={serviceModelData} title="Finding 1: Service Model" />
         <BarChart data={supportModelData} title="Finding 2: Support Model" />
@@ -259,7 +254,7 @@ export const slidesData = [
           <ul>
             <li>Small pilot group (N=7).</li>
             <li>Sample bias (existing cloud users).</li>
-            <li>Lack of regional (Portuguese) data.</li>
+            <li>Mainly regional (Portuguese) data.</li>
           </ul>
         </div>
         <div style={{flex: 1}}>
@@ -273,7 +268,7 @@ export const slidesData = [
     </>,
     <>
       <h3>Final Remarks</h3>
-      <p>"This dissertation proposes a structured approach and a pragmatic artifact that serves as a solid foundation for solving a relevant industry problem.</p>
+      <p>This dissertation proposes a structured approach and a pragmatic artifact that serves as a solid foundation for solving a relevant industry problem.</p>
       <p style={{fontSize: '1.5rem', marginTop: '30px'}}>The work's contribution is validated by the acceptance of a derived paper for publication at the</p>
       <p style={{fontSize: '1.8rem', fontWeight: 'bold', color: '#134674', marginTop: '10px'}}>ICICT 2026 Conference.</p>
     </>
