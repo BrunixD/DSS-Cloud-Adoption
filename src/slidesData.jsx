@@ -162,15 +162,15 @@ export const slidesData = [
       <h3>Application Architecture</h3>
       <p>The DSS was implemented using a modern, Serverless, Edge-First architecture for performance and scalability.</p>
       <figure>
-        <img src="./assets/app-architecture.png" alt="Application Architecture" style={{ maxHeight: '50vh' }}/>
-        <figcaption>Figure 4.8: Application Architecture</figcaption>
+        <img src="./assets/app-architecture.png" alt="Application Architecture" style={{ maxHeight: '60vh' }}/>
+        <figcaption>Application Architecture</figcaption>
       </figure>
     </>,
     <>
       <h3>Application Workflow</h3>
       <p>The final tool guides users through a simple, step-by-step process.</p>
       <figure>
-        <img src="./assets/app-workflow.png" alt="Application Workflow" style={{ maxHeight: '50vh' }}/>
+        <img src="./assets/app-workflow.png" alt="Application Workflow" style={{ maxHeight: '60vh' }}/>
         <figcaption>Application Workflow Diagram</figcaption>
       </figure>
       <p>Accessible at: <a href="https://brunomsc.pt" target="_blank" rel="noopener noreferrer">brunomsc.pt</a></p>
