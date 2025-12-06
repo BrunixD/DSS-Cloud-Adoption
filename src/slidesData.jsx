@@ -53,7 +53,6 @@ export const slidesData = [
           display: 'inline-block',
           textAlign: 'left'
         }}>
-          <h4 style={{textAlign: 'center', fontSize: '1.3rem', marginBottom: '20px'}}>Examination Committee</h4>
           <p style={{fontSize: '1.2rem', margin: '10px 0'}}><strong>Supervisor:</strong> Doctor Carlos Eduardo Dias Coutinho & Pedro José do Vale Duarte</p>
         </div>
       </div>
