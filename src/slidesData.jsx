@@ -53,7 +53,9 @@ export const slidesData = [
           display: 'inline-block',
           textAlign: 'left'
         }}>
-          <p style={{fontSize: '1.2rem', margin: '10px 0'}}><strong>Supervisor:</strong> Doctor Carlos Eduardo Dias Coutinho & Pedro José do Vale Duarte</p>
+          <p style={{fontSize: '1.2rem', margin: '10px 0'}}><strong>Supervisor:</strong></p>
+          <p style={{fontSize: '1.2rem', margin: '10px 20px'}}>Doctor Carlos Eduardo Dias Coutinho</p>
+          <p style={{fontSize: '1.2rem', margin: '10px 20px'}}>Pedro José do Vale Duarte</p>
         </div>
       </div>
     </>
